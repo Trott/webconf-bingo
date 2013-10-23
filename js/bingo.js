@@ -55,9 +55,16 @@
         var items = ITEMS.slice(0);
         var index;
 
-        for(var i=0 ; i<24 ; i++){
-          index = Math.floor(Math.random()*items.length);
-          rv[i] = items.splice(index,1)[0];
+        for(var i=0; i<5 ; i++){
+          rv[i]=[];
+          for(var j=0; j<5; j++) {
+            if (i==2 && j==2) {
+              rv[i][j] = "Free";
+            } else {
+              index = Math.floor(Math.random()*items.length);
+              rv[i][j] = items.splice(index,1)[0];
+            }
+          }
         }
 
         return rv;
@@ -69,7 +76,7 @@
     ['$scope', 'BingoCardService', function ($scope, BingoCardService) {
 
       $scope.newCard = function () {
-        $scope.items = BingoCardService.newCard();
+        $scope.card = BingoCardService.newCard();
       };
 
       $scope.newCard();
