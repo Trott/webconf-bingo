@@ -55,9 +55,13 @@
         var items = ITEMS.slice(0);
         var index;
 
-        for(var i=0 ; i<24 ; i++){
-          index = Math.floor(Math.random()*items.length);
-          rv[i] = items.splice(index,1)[0];
+        for(var i=0 ; i<25 ; i++){
+          if (i===12) {
+            rv[i] = "Free";
+          } else {
+            index = Math.floor(Math.random()*items.length);
+            rv[i] = items.splice(index,1)[0];
+          }
         }
 
         return rv;
