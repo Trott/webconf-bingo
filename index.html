@@ -1,59 +1,58 @@
 <!doctype html>
-<html>
+<html data-ng-app="bingo">
 <head>
   <title>Web Conference Bingo Card</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   <script src="js/bingo.js"></script>
   <script src="js/overthrow.js"></script>
 </head>
-<body>
+<body data-ng-controller="bingoController">
   <a href="https://github.com/Trott/webconf-bingo"><img class="github-ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
   <h1>Web Conference Bingo Card</h1>
-    <div class="card">
-      <div class="card-row">
-        <span class="card-header">B</span>
-        <span class="card-header">I</span>
-        <span class="card-header">N</span>
-        <span class="card-header">G</span>
-        <span class="card-header">O</span>
-      </div>
+    <div class="card-row">
+      <span class="card-header">B</span>
+      <span class="card-header">I</span>
+      <span class="card-header">N</span>
+      <span class="card-header">G</span>
+      <span class="card-header">O</span>
     </div>
     <div class="card-row">
-      <span class="card-item overthrow" id="item0"></span>
-      <span class="card-item overthrow" id="item1"></span>
-      <span class="card-item overthrow" id="item2"></span>
-      <span class="card-item overthrow" id="item3"></span>
-      <span class="card-item overthrow" id="item4"></span>
+      <span class="card-item overthrow">{{items[0]}}</span>
+      <span class="card-item overthrow">{{items[1]}}</span>
+      <span class="card-item overthrow">{{items[2]}}</span>
+      <span class="card-item overthrow">{{items[3]}}</span>
+      <span class="card-item overthrow">{{items[4]}}</span>
     </div>
     <div class="card-row">
-      <span class="card-item overthrow" id="item5"></span>
-      <span class="card-item overthrow" id="item6"></span>
-      <span class="card-item overthrow" id="item7"></span>
-      <span class="card-item overthrow" id="item8"></span>
-      <span class="card-item overthrow" id="item9"></span>
+      <span class="card-item overthrow">{{items[5]}}</span>
+      <span class="card-item overthrow">{{items[6]}}</span>
+      <span class="card-item overthrow">{{items[7]}}</span>
+      <span class="card-item overthrow">{{items[8]}}</span>
+      <span class="card-item overthrow">{{items[9]}}</span>
     </div>
     <div class="card-row">
-      <span class="card-item overthrow" id="item10"></span>
-      <span class="card-item overthrow" id="item11"></span>
+      <span class="card-item overthrow">{{items[10]}}</span>
+      <span class="card-item overthrow">{{items[11]}}</span>
       <span class="card-item overthrow free">Free</span>
-      <span class="card-item overthrow" id="item12"></span>
-      <span class="card-item overthrow" id="item13"></span>
+      <span class="card-item overthrow">{{items[12]}}</span>
+      <span class="card-item overthrow">{{items[13]}}</span>
     </div>
     <div class="card-row">
-      <span class="card-item overthrow" id="item14"></span>
-      <span class="card-item overthrow" id="item15"></span>
-      <span class="card-item overthrow" id="item16"></span>
-      <span class="card-item overthrow" id="item17"></span>
-      <span class="card-item overthrow" id="item18"></span>
+      <span class="card-item overthrow">{{items[14]}}</span>
+      <span class="card-item overthrow">{{items[15]}}</span>
+      <span class="card-item overthrow">{{items[16]}}</span>
+      <span class="card-item overthrow">{{items[17]}}</span>
+      <span class="card-item overthrow">{{items[18]}}</span>
     </div>
     <div class="card-row">
-      <span class="card-item overthrow" id="item19"></span>
-      <span class="card-item overthrow" id="item20"></span>
-      <span class="card-item overthrow" id="item21"></span>
-      <span class="card-item overthrow" id="item22"></span>
-      <span class="card-item overthrow" id="item23"></span>
+      <span class="card-item overthrow">{{items[19]}}</span>
+      <span class="card-item overthrow">{{items[20]}}</span>
+      <span class="card-item overthrow">{{items[21]}}</span>
+      <span class="card-item overthrow">{{items[22]}}</span>
+      <span class="card-item overthrow">{{items[23]}}</span>
     </div>
-  <button id="new-card" class="button">Get a new card!</button>
+  <button class="button" data-ng-click="newCard()">Get a new card!</button>
 </body>
 </html>
