@@ -11,7 +11,6 @@ body {
 .card-header, .card-item {
   display: inline-block;
   width: 19%;
-  margin-bottom:0.25em;
 }
 
 .card-header, .free {
@@ -21,6 +20,8 @@ body {
 .card-item {
   background-color: #bada55;
   height: 6em;
+  margin-top: 0.25em;
+  padding-top: 0.25em;
   overflow: auto;
   -webkit-overflow-scrolling: touch
 }

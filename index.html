@@ -4,7 +4,7 @@
   <title>Web Conference Bingo Card</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   <script src="js/bingo.js"></script>
   <script src="js/overthrow.js"></script>
 </head>
@@ -20,17 +20,13 @@
         <span class="card-header">O</span>
       </div>
       <div data-ng-repeat="row in card" class="card-row">
+        <!-- should be nested data-ng-repeat, but that messes up formatting, inexplicably -->
         <span class="card-item overthrow">{{row[0]}}</span>
-                <span class="card-item overthrow">{{row[1]}}</span>
-
+        <span class="card-item overthrow">{{row[1]}}</span>
         <span class="card-item overthrow">{{row[2]}}</span>
-
         <span class="card-item overthrow">{{row[3]}}</span>
-
         <span class="card-item overthrow">{{row[4]}}</span>
-
-<!--         <span data-ng-repeat="item in row" class="card-item overthrow">{{item}}</span>
- -->      </div>
+      </div>
     </div>
   <button class="button" data-ng-click="newCard()">Get a new card!</button>
 </body>
