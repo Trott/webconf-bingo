@@ -41,6 +41,7 @@
       'WAT?!',
       'speaker calls out primary sponsor for doing something wrong',
       'watch amazing session only to be told at the end that your target browsers don\'t support it',
+      '"phablet" used without hint of irony',
     ];
 
     return {
