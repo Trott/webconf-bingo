@@ -1,0 +1,33 @@
+body {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  text-align: center;
+  font: Arial;
+}
+
+.card-row{
+  width: 100%;
+}
+
+.card-header, .card-item {
+  text-align: center;
+  background: #bada55;
+  display: inline-block;
+  width: 19%;
+  vertical-align: middle;
+}
+
+.card-header, .free {
+  background-color: #d3d3d3;
+}
+
+.card-item {
+  height: 5em;
+  padding-top: 1em;
+  margin-top: 0.25em;
+}
+
+.button {
+  margin: 1em auto;
+}
