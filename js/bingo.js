@@ -39,6 +39,12 @@
     'feeling like the dumbest person in the room',
     'feeling like the smartest person in the room',
     'thinking "Best. Something. Ever." and actualy meaning it',
+    'at a CSS talk when you thought it would be a JS talk',
+    'at a JS talk when you thought it would be a CSS talk',
+    'high fiving another attendee',
+    'some annoyance defused by recalling low ticket price',
+    't-shirt schwag',
+    'sticker schwag',
   ];
 
   window.onload = init;
