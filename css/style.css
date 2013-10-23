@@ -40,3 +40,7 @@ body {
   right: 0;
   border: 0;
 }
+
+.selected{
+  background: blue;
+}

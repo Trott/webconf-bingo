@@ -55,6 +55,9 @@
         var items = ITEMS.slice(0);
         var index;
 
+        //remove selected class when getting a new card
+        $( ".card-item" ).removeClass( "selected" );
+
         for(var i=0 ; i<24 ; i++){
           index = Math.floor(Math.random()*items.length);
           rv[i] = items.splice(index,1)[0];
@@ -75,4 +78,10 @@
       $scope.newCard();
     }]
   );
+
+  //a touch of jquery to toggle the background of clicked items
+  $( ".card-item" ).click(function() {
+    $( this ).toggleClass( "selected" );
+  });
+
 }());
