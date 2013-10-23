@@ -76,7 +76,9 @@
     ['$scope', 'BingoCardService', function ($scope, BingoCardService) {
 
       $scope.newCard = function () {
-        $scope.card = BingoCardService.newCard();
+        $scope.card = {};
+        $scope.card.rows = BingoCardService.newCard();
+        $scope.card.header = ['B', 'I', 'N', 'G', 'O'];
       };
 
       $scope.newCard();

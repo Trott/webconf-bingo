@@ -5,29 +5,22 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css" />
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  <script src="js/bingo.js"></script>
-  <script src="js/overthrow.js"></script>
+
 </head>
 <body data-ng-controller="bingoController">
   <a href="https://github.com/Trott/webconf-bingo"><img class="github-ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
   <h1>Web Conference Bingo Card</h1>
     <div class="card">
       <div class="card-row">
-        <span class="card-header">B</span>
-        <span class="card-header">I</span>
-        <span class="card-header">N</span>
-        <span class="card-header">G</span>
-        <span class="card-header">O</span>
+        <span data-ng-repeat="column in card.header" class="card-header">{{column}}</span>
       </div>
-      <div data-ng-repeat="row in card" class="card-row">
+      <div data-ng-repeat="row in card.rows" class="card-row">
         <!-- should be nested data-ng-repeat, but that messes up formatting, inexplicably -->
-        <span class="card-item overthrow">{{row[0]}}</span>
-        <span class="card-item overthrow">{{row[1]}}</span>
-        <span class="card-item overthrow">{{row[2]}}</span>
-        <span class="card-item overthrow">{{row[3]}}</span>
-        <span class="card-item overthrow">{{row[4]}}</span>
+        <span data-ng-repeat="item in row" class="card-item overthrow" data-ng-class="{selected: selected}" data-ng-click="selected=!selected">{{item}}</span>
       </div>
     </div>
   <button class="button" data-ng-click="newCard()">Get a new card!</button>
 </body>
+  <script src="js/bingo.js"></script>
+  <script src="js/overthrow.js"></script>
 </html>
