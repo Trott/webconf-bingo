@@ -12,7 +12,6 @@ body {
 
 .card-header, .card-item {
   text-align: center;
-  background: #bada55;
   display: inline-block;
   width: 19%;
   vertical-align: middle;
@@ -23,6 +22,7 @@ body {
 }
 
 .card-item {
+  background-color: #bada55;
   height: 6em;
   padding-top: 1em;
   margin-top: 0.25em;
