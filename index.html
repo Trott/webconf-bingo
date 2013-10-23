@@ -15,7 +15,6 @@
         <span data-ng-repeat="column in card.header" class="card-header">{{column}}</span>
       </div>
       <div data-ng-repeat="row in card.rows" class="card-row">
-        <!-- should be nested data-ng-repeat, but that messes up formatting, inexplicably -->
         <span data-ng-repeat="item in row" class="card-item overthrow" data-ng-class="{selected: selected}" data-ng-click="selected=!selected">{{item}}</span>
       </div>
     </div>
