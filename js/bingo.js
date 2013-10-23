@@ -22,19 +22,10 @@
       'presenter makes joke about his/her age',
       'presenter jokes about audience sleeping',
       'presenter mentions yet another JS MV* framework you never heard of before',
-      'PhoneGap',
-      'AngularJS',
-      'Backbone',
-      'Ember',
-      'jQuery',
-      'Modernizr',
       'presenter cites actual text from a W3C standard',
       '#bada55',
       'attendee wearing suspenders',
       'presenter does not show up',
-      'Bootstrap',
-      'Foundation',
-      'Topcoat',
       'presenter drops f-bomb',
       '"dirty checking" pun',
       'mind blown by slide deck animations',
@@ -49,6 +40,7 @@
       'sticker schwag',
       'WAT?!',
       'speaker calls out primary sponsor for doing something wrong',
+      'watch amazing session only to be told at the end that your target browsers don\'t support it',
     ];
 
     return {
