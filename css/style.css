@@ -8,7 +8,6 @@ body {
 }
 
 .card-header, .card-item {
-  display: inline-block;
   width: 19%;
   margin: 0.25em;
 }
@@ -18,9 +17,8 @@ body {
 }
 
 .card-item {
-  background-color: #bada55;
   height: 6em;
-  padding-top: 0.25em;
+  background-color: #bada55;
   overflow: auto;
   -webkit-overflow-scrolling: touch
 }

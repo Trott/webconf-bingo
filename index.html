@@ -10,14 +10,15 @@
 <body data-ng-controller="bingoController">
   <a href="https://github.com/Trott/webconf-bingo"><img class="github-ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
   <h1>Web Conference Bingo Card</h1>
-    <div class="card">
-      <div class="card-row">
-        <span data-ng-repeat="column in card.header" class="card-header">{{column}}</span>
-      </div>
-      <div data-ng-repeat="row in card.rows" class="card-row">
-        <span data-ng-repeat="item in row" class="card-item overthrow" data-ng-class="{selected: selected}" data-ng-click="selected=!selected">{{item}}</span>
-      </div>
-    </div>
+    <!-- Yes, <table>. A bingo card is tabular data. I think. -->
+    <table class="card">
+      <tr class="card-row">
+        <th data-ng-repeat="column in card.header" class="card-header">{{column}}</th>
+      </tr>
+      <tr data-ng-repeat="row in card.rows" class="card-row">
+        <td data-ng-repeat="item in row" class="card-item overthrow" data-ng-class="{selected: selected}" data-ng-click="selected=!selected">{{item}}</td>
+      </tr>
+    </table>
   <button class="button" data-ng-click="newCard()">Get a new card!</button>
 </body>
   <script src="js/bingo.js"></script>
