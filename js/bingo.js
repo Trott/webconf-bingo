@@ -29,6 +29,11 @@
     'presenter cites actual text from a W3C standard',
     '#bada55',
     'attendee wearing suspenders',
+    'presenter does not show up',
+    'Bootstrap',
+    'Foundation',
+    'Topcoat',
+    'presenter drops f-bomb',
   ];
 
   window.onload = init;

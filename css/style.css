@@ -3,7 +3,7 @@ body {
   border: 0;
   margin: 0;
   text-align: center;
-  font: Arial;
+  font-family: Arial;
 }
 
 .card-row{
@@ -23,9 +23,10 @@ body {
 }
 
 .card-item {
-  height: 5em;
+  height: 6em;
   padding-top: 1em;
   margin-top: 0.25em;
+  overflow: auto;
 }
 
 .button {
