@@ -47,6 +47,8 @@
       'some annoyance defused by recalling low ticket price',
       't-shirt schwag',
       'sticker schwag',
+      'WAT?!',
+      'speaker calls out primary sponsor for doing something wrong',
     ];
 
     return {
