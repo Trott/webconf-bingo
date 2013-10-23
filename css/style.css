@@ -8,7 +8,6 @@ body {
 }
 
 .card-header, .card-item {
-  display: inline-block;
   width: 19%;
   margin: 0.25em;
 }
