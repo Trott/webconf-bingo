@@ -1,20 +1,17 @@
 body {
-  padding: 0;
-  border: 0;
-  margin: 0;
   text-align: center;
   font-family: Arial;
 }
 
-.card-row{
-  width: 100%;
+.card {
+  text-align: center;
+  vertical-align: middle;
 }
 
 .card-header, .card-item {
-  text-align: center;
   display: inline-block;
   width: 19%;
-  vertical-align: middle;
+  margin-bottom:0.25em;
 }
 
 .card-header, .free {
@@ -24,8 +21,6 @@ body {
 .card-item {
   background-color: #bada55;
   height: 6em;
-  padding-top: 1em;
-  margin-top: 0.25em;
   overflow: auto;
   -webkit-overflow-scrolling: touch
 }
