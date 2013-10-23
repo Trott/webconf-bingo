@@ -34,6 +34,11 @@
     'Foundation',
     'Topcoat',
     'presenter drops f-bomb',
+    '"dirty checking" pun',
+    'mind blown by slide deck animations',
+    'feeling like the dumbest person in the room',
+    'feeling like the smartest person in the room',
+    'thinking "Best. Something. Ever." and actualy meaning it',
   ];
 
   window.onload = init;
