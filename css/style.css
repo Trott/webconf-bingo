@@ -33,3 +33,10 @@ body {
 .button {
   margin: 1em auto;
 }
+
+.github-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
