@@ -44,6 +44,7 @@
       '"phablet" used without hint of irony',
       'lolcat in slide deck',
       'session.title != session.topic',
+      'Ilya Grigorik\'s High Performance Network Browsing book is mentioned',
     ];
 
     return {
