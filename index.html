@@ -16,8 +16,8 @@
       <tr class="card-row">
         <th data-ng-repeat="column in card.header" class="card-header">{{column}}</th>
       </tr>
-      <tr data-ng-repeat="row in card.rows" class="card-row">
-        <td data-ng-repeat="item in row" class="card-item overthrow" data-ng-class="{selected: selected}" data-ng-click="selected=!selected">{{item}}</td>
+      <tr data-ng-repeat="row in card.rows" data-ng-init="outerIndex=$index;" class="card-row">
+        <td data-ng-repeat="item in row" class="card-item overthrow" data-ng-class="{selected: selected || (outerIndex==2 && $index==2)}" data-ng-click="selected=!selected">{{item}}</td>
       </tr>
     </table>
   <button class="button" data-ng-click="newCard()">Get a new card!</button>
