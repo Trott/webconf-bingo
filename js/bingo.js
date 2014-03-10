@@ -45,6 +45,7 @@
       'lolcat in slide deck',
       'session.title != session.topic',
       'Ilya Grigorik\'s High Performance Network Browsing book is mentioned',
+      'Someone tweets asking for the wifi password',
     ];
 
     return {
