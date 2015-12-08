@@ -47,6 +47,8 @@
       'Ilya Grigorik\'s High Performance Network Browsing book is mentioned',
       'Someone tweets asking for the wifi password',
       '"isomorphic" used with explicit scare quotes',
+      '"the next killer app"',
+      '"it\'s in our DNA"',
     ];
 
     return {
