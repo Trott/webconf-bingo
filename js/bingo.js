@@ -46,6 +46,7 @@
       'session.title != session.topic',
       'Ilya Grigorik\'s High Performance Network Browsing book is mentioned',
       'Someone tweets asking for the wifi password',
+      '"isomorphic" used with explicit scare quotes',
     ];
 
     return {
